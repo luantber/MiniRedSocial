@@ -7,6 +7,8 @@ class Usuario extends CI_Model {
         public function __construct($user,$pass)
         {
                 parent::__construct();
+                $this->username = $user;
+                $this->password = $pass;
 
         }
 

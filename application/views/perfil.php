@@ -1,10 +1,10 @@
-      <div class="row align="center" container ">
-        <div class="col s12 m6">
+      <div class="row container ">
+        <div class="col s12 ">
           <div class="card">
             <div class="card-image">
               <img src="<?php echo base_url() ?>material/fondo.jpg">
               <span class="card-title">
-                <?php echo $this->sesion->username ?>
+                <?php echo $this->session->username ?>
               </span>
             </div>
             <div class="card-content">
@@ -17,10 +17,10 @@
         </div>
       </div>
 <!-- mensaje !-->
-  <div class="row">
+  <div class="row container" >
     <form class="col s12" method="POST" action="<?php  echo base_url() ?>muro/postear">
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s11">
           <i class="material-icons prefix">mode_edit</i>
           <textarea id="icon_prefix2" class="materialize-textarea" name="texto"></textarea>
           <label for="icon_prefix2">Compartir Idea</label>

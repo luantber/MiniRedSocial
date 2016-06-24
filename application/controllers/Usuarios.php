@@ -28,8 +28,9 @@ class Usuarios extends CI_Controller {
 		$user->save();
 		// Produces: INSERT INTO mytable (title, content, date) VALUES ('My Title', 'My Content', 'My Date')
 		$this->load->view('template/header');
-			$this->load->view('registrar');
+			$this->load->view('exito');
 			$this->load->view('template/footer');
+			$this->load->view('login');
 
 	}
 	public function perfil()
@@ -39,5 +40,7 @@ class Usuarios extends CI_Controller {
 		$this->load->view('template/footer');
 	}
 
-	
+
+
+
 }

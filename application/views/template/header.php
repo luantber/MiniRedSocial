@@ -24,7 +24,7 @@
     })
     </script> 
   
-  <nav class="light-blue darken-4">
+  <nav class="teal darken-3">
     <div class="nav-wrapper container ">
       <a href="<?php echo base_url() ?>" class="brand-logo">Tornado</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>

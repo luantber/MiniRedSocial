@@ -3,7 +3,8 @@
           <div class="card medium">
             <div class="card-image">
               <img class="" src="<?php echo base_url() ?>material/fondo.jpg">
-              <span class="card-title">nombre
+              <span class="card-title  grey darken-1">
+              <?php echo $this->session->username ?>
               </span>
             </div>
             <div class="card-content">

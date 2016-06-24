@@ -1,10 +1,10 @@
 <?php
 
 
-class Login extends CI_Controller {
+class Muro extends CI_Controller {
 
 	public function index()	{
-		echo "THIS IS EL MUROOOOOO";
+		echo "$this->load->view('muro')";
 	}
 
 	public function postear(){
@@ -16,7 +16,8 @@ class Login extends CI_Controller {
             $post = new Post($this->session->id,$this->input->post('text'));
             $post->save();
             
-			this->load->view('template/header')
-			echo "Posteado Correctamente";
+			$this->load->view('template/header');
+		
+			echo "Posteado Correctamente";}
 	}
 

@@ -39,6 +39,7 @@
        ?> 
          <li><a href="<?php echo base_url() ?>usuarios/perfil">Perfil</a></li>
           <li><a href="<?php echo base_url() ?>muro">Muro</a></li>
+          <li class="active"><a href="#"><b><?php echo "@".$this->session->username; ?></b></a></li> 
           <li><a href="<?php echo base_url() ?>logout">Logout</a></li> 
       <?php  
         } 

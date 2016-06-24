@@ -3,8 +3,13 @@
 class Muro extends CI_Controller {
 
 	public function index()	{
+
+		$res = $this->post->get_all();
+		$data = array('res' => $res );
+		//$data = array_reverse($data);
+		//print_r($data);
 		$this->load->view('template/header');
-		$this->load->view('muro');
+		$this->load->view('muro',$data);
 
 	}
 

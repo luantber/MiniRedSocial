@@ -15,6 +15,16 @@ class Post extends CI_Model {
         {
                 //return $this->db->get_where('posts',array('username' => $username ))->row_array();
         }
+        public function get_all()
+        {
+                //return $this->db->get('posts');
+
+                $this->db->select('*');
+                $this->db->from('posts');
+                $this->db->join('usuarios', 'usuarios.id_usuario = posts.id_usuario');
+                $this->db->order_by('id_post', 'DESC');
+                return $this->db->get()->result_array();
+        }
 
         public function save()
         {

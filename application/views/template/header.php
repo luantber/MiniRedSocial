@@ -28,11 +28,24 @@
     <div class="nav-wrapper container ">
       <a href="<?php echo base_url() ?>" class="brand-logo">Tornado</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
       <ul class="right hide-on-med-and-down">
-        <li><a href="<?php echo base_url() ?>login">Iniciar Sesion</a></li>
-        <li><a href="<?php echo base_url() ?>usuarios/registrar">Registrase</a></li>
-        <li><a href="<?php echo base_url() ?>usuarios/perfil">Perfil</a></li>
+      <?php if (!$this->session->logueado) { ?>
+      
+          <li><a href="<?php echo base_url() ?>login">Iniciar Sesion</a></li>
+          <li><a href="<?php echo base_url() ?>usuarios/registrar">Registrase</a></li>
+      <?php 
+          }
+          else{
+       ?>
+          <li><a href="<?php echo base_url() ?>logout">Logout</a></li>
+      <?php 
+        }
+       ?>
+        
       </ul>
+
+
       <ul class="side-nav" id="mobile-demo">
         <li><a href="<?php echo base_url() ?>login">Iniciar Sesion</a></li>
         <li><a href="<?php echo base_url() ?>usuarios/registrar">Registrarse</a></li>

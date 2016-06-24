@@ -10,7 +10,9 @@ class Usuarios extends CI_Controller {
 
 	public function registrar(){
 		if (!isset($_POST['username'])) {	
+			$this->load->view('template/header');
 			$this->load->view('registrar');
+			$this->load->view('template/footer');
 			return;
 		}
 
@@ -22,9 +24,12 @@ class Usuarios extends CI_Controller {
 		}
 		*/
 		$user = new Usuario($_POST['username'],$_POST['password']);
-		$this->db->insert('usuarios', $user);
+		//$this->load->database('code');
+		$user->save();
 		// Produces: INSERT INTO mytable (title, content, date) VALUES ('My Title', 'My Content', 'My Date')
-		$this->load->view('');
+		$this->load->view('template/header');
+			$this->load->view('registrar');
+			$this->load->view('template/footer');
 
 	}
 }

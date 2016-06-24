@@ -10,6 +10,7 @@ class Muro extends CI_Controller {
 		//print_r($data);
 		$this->load->view('template/header');
 		$this->load->view('muro',$data);
+		$this->load->view('template/footer');
 
 	}
 
@@ -25,5 +26,6 @@ class Muro extends CI_Controller {
 			$this->load->view('template/header');
 
 			redirect(base_url()."muro");
+			$this->load->view('template/footer');
 	}
 }

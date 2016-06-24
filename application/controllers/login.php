@@ -8,7 +8,7 @@ class Login extends CI_Controller {
 		if(!$this->input->post('username')){
 			$this->load->view('template/header');
 			$this->load->view('login');
-
+			$this->load->view('template/footer');
 			return;
 		}
 
@@ -37,6 +37,7 @@ class Login extends CI_Controller {
 			else{
 				$this->load->view('template/header');
 				echo "FAil... Contraseña Incorrecta ";
+				$this->load->view('template/footer');
 			}
 
 		}

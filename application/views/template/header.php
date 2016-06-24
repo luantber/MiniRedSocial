@@ -2,6 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>material/main.css">
+
 	<!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -26,7 +30,7 @@
   
   <nav class="teal darken-3">
     <div class="nav-wrapper container ">
-      <a href="<?php echo base_url() ?>" class="brand-logo">Tornado</a>
+      <a href="<?php echo base_url() ?>" class="brand-logo lobster">Tornado</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
          <?php if (!$this->session->logueado) { ?> 
@@ -46,8 +50,20 @@
        ?> 
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="<?php echo base_url() ?>login">Iniciar Sesion</a></li>
-        <li><a href="<?php echo base_url() ?>usuarios/registrar">Registrarse</a></li>
-        <li><a href="<?php echo base_url() ?>usuarios/perfil">Perfil</a></li>
+        <?php if (!$this->session->logueado) { ?> 
+       
+          <li><a href="<?php echo base_url() ?>login">Iniciar Sesion</a></li> 
+          <li><a href="<?php echo base_url() ?>usuarios/registrar">Registrase</a></li> 
+      <?php  
+          } 
+          else{ 
+       ?> 
+         <li><a href="<?php echo base_url() ?>usuarios/perfil">Perfil</a></li>
+          <li><a href="<?php echo base_url() ?>muro">Muro</a></li>
+          <li class="active"><a href="#"><b><?php echo "@".$this->session->username; ?></b></a></li> 
+          <li><a href="<?php echo base_url() ?>logout">Logout</a></li> 
+      <?php  
+        } 
+       ?> </ul>
       </nav>
 

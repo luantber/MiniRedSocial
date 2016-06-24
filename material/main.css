@@ -1,0 +1,24 @@
+.pacifico{
+	font-family: 'Pacifico', cursive;
+}
+.lobster{
+	font-family: 'Lobster', cursive;
+}
+.mas-grande{
+	font-size: 3em; 
+}
+.user{
+	font-size: 1.5em;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+ main {
+    flex: 1 0 auto;
+  }
+
+  

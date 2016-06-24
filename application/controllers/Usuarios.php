@@ -32,14 +32,15 @@ class Usuarios extends CI_Controller {
 
 		$this->load->view('template/header');
 			$this->load->view('exito');
-			$this->load->view('template/footer');
 			$this->load->view('login');
+			$this->load->view('template/footer');
 
 	}
 	public function perfil()
 	{
 		$this->load->view('template/header');
 		$this->load->view('perfil');
+		//$this->load->view('muro');
 		$this->load->view('template/footer');
 	}
 

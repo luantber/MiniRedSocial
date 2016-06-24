@@ -1,3 +1,6 @@
+
+
+
       <div class="row container">
         <div class="col s12">
 <?php 
@@ -7,7 +10,8 @@
           <div class="card small">
             <div class="card-image">
               <img class="" src="<?php echo base_url() ?>material/fondo.jpg">
-              <span class="card-title grey-text darken-3"><b>Posteado por: </b><?php echo $row['username'] ; ?>
+              <span class="card-title   teal-text text-darken-4">
+              <?php echo $this->session->username ?>
               </span>
             </div>
             <div class="card-content">

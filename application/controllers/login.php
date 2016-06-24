@@ -36,14 +36,17 @@ class Login extends CI_Controller {
 			}
 			else{
 				$this->load->view('template/header');
-				echo "FAil... Contraseña Incorrecta ";
+				$this->load->view('incorrecto');
+				$this->load->view('login');
 				$this->load->view('template/footer');
 			}
 
 		}
 		else{
 			$this->load->view('template/header');
-			echo "NO existe ese usuario";
+			$this->load->view('noexiste');
+			$this->load->view('registrar');
+			$this->load->view('template/footer');
 		}
 		
 	}

@@ -23,6 +23,9 @@
           <label for="email">Email</label>
         </div>
       </div>
+
+      <input type="file" name="userfile" size="20" />
+      
         <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
   </button>

@@ -24,6 +24,6 @@ class Muro extends CI_Controller {
             
 			$this->load->view('template/header');
 
-			echo "Posteado Correctamente";
+			redirect(base_url()."muro");
 	}
 }

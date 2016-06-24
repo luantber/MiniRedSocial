@@ -27,6 +27,9 @@ class Usuarios extends CI_Controller {
 		//$this->load->database('code');
 		$user->save();
 		// Produces: INSERT INTO mytable (title, content, date) VALUES ('My Title', 'My Content', 'My Date')
+
+
+
 		$this->load->view('template/header');
 			$this->load->view('exito');
 			$this->load->view('template/footer');

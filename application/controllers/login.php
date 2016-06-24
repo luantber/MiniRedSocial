@@ -29,9 +29,10 @@ class Login extends CI_Controller {
 
 					$this->session->set_userdata($sesion);
 
-				$this->load->view('template/header');	
-				echo "Login.... Exitoso <br>";
-				echo $this->session->id."    ".$this->session->username;
+				//$this->load->view('template/header');	
+				//echo "Login.... Exitoso <br>";
+				//echo $this->session->id."    ".$this->session->username;
+				 redirect(base_url()."muro");
 			}
 			else{
 				$this->load->view('template/header');

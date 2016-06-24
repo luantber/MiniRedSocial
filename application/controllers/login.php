@@ -22,6 +22,7 @@ class Login extends CI_Controller {
 			if ($data['password'] == $password) {
 				# code...
 					$sesion = array(
+					'id' => $data['id_usuario'],
 					'username'  => $username,
 					'logueado' => true
 					);
@@ -30,7 +31,7 @@ class Login extends CI_Controller {
 
 				$this->load->view('template/header');	
 				echo "Login.... Exitoso <br>";
-				echo $this->session->username;
+				echo $this->session->id."    ".$this->session->username;
 			}
 			else{
 				$this->load->view('template/header');

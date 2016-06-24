@@ -36,5 +36,6 @@
       <ul class="side-nav" id="mobile-demo">
         <li><a href="<?php echo base_url() ?>login">Iniciar Sesion</a></li>
         <li><a href="<?php echo base_url() ?>usuarios/registrar">Registrarse</a></li>
+        <li><a href="<?php echo base_url() ?>usuarios/perfil">Perfil</a></li>
       </nav>
 

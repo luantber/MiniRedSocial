@@ -12,7 +12,6 @@ class Login extends CI_Controller {
 			return;
 		}
 
-
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 
@@ -22,14 +21,25 @@ class Login extends CI_Controller {
 			
 			if ($data['password'] == $password) {
 				# code...
-				echo "Login.... Exitoso";
+					$sesion = array(
+					'username'  => $username,
+					'logueado' => true
+					);
+
+					$this->session->set_userdata($sesion);
+
+				$this->load->view('template/header');	
+				echo "Login.... Exitoso <br>";
+				echo $this->session->username;
 			}
 			else{
+				$this->load->view('template/header');
 				echo "FAil... Contraseña Incorrecta ";
 			}
 
 		}
 		else{
+			$this->load->view('template/header');
 			echo "NO existe ese usuario";
 		}
 		

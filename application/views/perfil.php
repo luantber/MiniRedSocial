@@ -3,7 +3,9 @@
           <div class="card">
             <div class="card-image">
               <img src="<?php echo base_url() ?>material/fondo.jpg">
-              <span class="card-title">Nombre de Usuario</span>
+              <span class="card-title">
+                <?php echo $this->sesion->username ?>
+              </span>
             </div>
             <div class="card-content">
               <p>Hola esta es mi red social.</p>

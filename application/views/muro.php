@@ -1,9 +1,10 @@
-      <div class="row container ">
+      <div class="row container card small">
         <div class="col s12">
-          <div class="card">
+          <div class="card small">
             <div class="card-image">
-              <img src="<?php echo base_url() ?>material/fondo.jpg">
-              <span class="card-title">Nombre de Usuario</span>
+              <img class="" src="<?php echo base_url() ?>material/fondo.jpg">
+              <span class="card-title">nombre
+              </span>
             </div>
             <div class="card-content">
               <p>Publicaiones</p>

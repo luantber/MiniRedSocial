@@ -3,7 +3,9 @@
 class Muro extends CI_Controller {
 
 	public function index()	{
+		$this->load->view('template/header');
 		$this->load->view('muro');
+
 	}
 
 	public function postear(){
@@ -16,6 +18,7 @@ class Muro extends CI_Controller {
             $post->save();
             
 			$this->load->view('template/header');
+
 			echo "Posteado Correctamente";
 	}
 }

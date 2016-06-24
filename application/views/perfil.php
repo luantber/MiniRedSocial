@@ -16,11 +16,11 @@
       </div>
 <!-- mensaje !-->
   <div class="row">
-    <form class="col s12">
+    <form class="col s12" method="POST" action="<?php  echo base_url() ?>muro/postear">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <textarea id="icon_prefix2" class="materialize-textarea" name="texto"></textarea>
           <label for="icon_prefix2">Compartir Idea</label>
         </div>
       </div>

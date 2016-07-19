@@ -23,7 +23,16 @@ class Usuario extends CI_Model {
 
         public function save()
         {
-        	$this->db->insert('usuarios', $this);
+                //Ejemplo
+                //if ($this->db->query('SELECT `*` FROM `usuarios`')) {
+                //        # code...
+                //}
+
+                
+        	if (!$this->db->insert('usuarios', $this)) {
+                        print($this->db->error());
+                       
+                };
         }
 
 }

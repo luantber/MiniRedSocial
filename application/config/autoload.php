@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url');
+$autoload['helper'] = array('url','form');
 
 /*
 | -------------------------------------------------------------------
@@ -107,7 +107,7 @@ $autoload['config'] = array();
 
 /*
 | -------------------------------------------------------------------
-|  Auto-load Language files
+|  Auto-load Lan guage files
 | -------------------------------------------------------------------
 | Prototype:
 |

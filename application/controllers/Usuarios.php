@@ -23,10 +23,15 @@ class Usuarios extends CI_Controller {
 		public $date = 'My Date';
 		}
 		*/
+		
 		$user = new Usuario($_POST['username'],$_POST['password']);
 		//$this->load->database('code');
 		$user->save();
 		// Produces: INSERT INTO mytable (title, content, date) VALUES ('My Title', 'My Content', 'My Date')
+
+		
+
+
 
 
 

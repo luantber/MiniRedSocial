@@ -5,7 +5,7 @@
 
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Ingrese nombre de usuario" id="user_name" type="text" class="validate" name="username">
+          <input placeholder="Ingrese nombre de usuario" id="user_name" type="text" class="validate" name="username" required>
           <label for="user_name">Nombre Usuario</label>
         </div>
         
@@ -13,18 +13,16 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="Ingrese contraseña" type="password" class="validate" name="password">
+          <input id="Ingrese contraseña" placeholder="****" type="password" class="validate" name="password" required>
           <label for="password">Contraseña</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validate" required>
           <label for="email">Email</label>
         </div>
       </div>
-
-      <input type="file" name="userfile" size="20" />
       
         <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
